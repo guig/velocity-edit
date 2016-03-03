@@ -51,7 +51,7 @@ public class EditorUtil {
 	@SuppressWarnings("rawtypes")
 	public static void addMarker(IFile file, String message, int line, int colPos, int markerType) {
 		try {
-			Map<String, Comparable> attributes = new HashMap<String, Comparable>(5);
+			Map<String, Object> attributes = new HashMap<String, Object>(5);
 			attributes.put(IMarker.SEVERITY, new Integer(markerType));
 			attributes.put(IMarker.MESSAGE, message);
 			attributes.put(IMarker.TEXT, message);
